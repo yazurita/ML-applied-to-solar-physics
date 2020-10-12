@@ -1,0 +1,2 @@
+# ML-applied-to-solar-physics
+There exists a growing interest in the application of Machine Learning methods to Astrophysics, as they have proven to be very useful in the past. Following this line of work and motivated by a reduction in computation time, we explored the use of an artificial neural network (ANN) in the synthesis of Stokes profiles through the direct mapping of solar atmosphere magnitudes and profiles.
