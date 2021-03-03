@@ -1,14 +1,24 @@
-# ML applied to solar physics
+# NLTE inversions of Stokes profiles using Artificial Neural Networks
+## Introduction
+We trained an ANN in order to map sets of atmosphere magnitudes to their corresponding Stokes profiles. This model is later used to generate fast NLTE inversions of measured profiles.
 
-### English
-There exists a growing interest in the application of Machine Learning methods to Astrophysics, as they have proven to be very useful in the past. Following this line of work and motivated by a reduction in computation time, we explored the use of an artificial neural network (ANN) in the synthesis of Stokes profiles through the direct mapping of solar atmosphere magnitudes and profiles. 
+## Data used (private)
+Two FITS files containing sets of atmosphere magnitudes (temperature, pressure, LOS and microturbulent velocity and magnetic field intensity, inclination and azimuth) and Stokes profiles (I, Q, U, V) in float64 format. Their dimensions are (61, 288, 288, 7) and (601, 288, 288, 4) respectively.
 
-This is the base of my Degree's Final Project, which can be found at: https://riull.ull.es/xmlui/handle/915/20669
-First, some basic concepts regarding Machine Learning and the problem at hand are presented, followed by a complete description of the ANN training process. Finally, a Stokes profile inversion (which requires a great number of synthesis) is carried out using an optimization algorithm to recover the solar atmosphere magnitudes.
+## Technologies
+Jupyter Notebook (server version 6.0.1) <br />
+Python 3 (version 3.7.4)
 
+## Repository contents
+* data-visualization.ipynb <br />
+Notebook with different graphic representations of the data.
 
-### Español
-Existe un interés creciente en la aplicación de mçetodos de Aprendizaje automático a Astrofísica, ya que han demostrado ser de gran utilidad a lo largo de los años. Siguiendo esta línea de trabajo y motivado por una reducción en el tiempo de computación, se explora el uso de una red neuronal artificial (ANN) en la síntesis de perfiles de Stokes mediante un mapeo directo de magnitudes de la atmósfera solar y perfiles. 
+* main-code.ipynb <br />
+Notebook with the code used to create, train and use the ANN for inversions.
 
-Esta es la base de mi Trabajo de Fin de Grado, al que se puede acceder en: https://riull.ull.es/xmlui/handle/915/20669
-Primero, se exponen una serie de conceptos básicos sobre Aprendizaje automático y el problema que nos ocupa, seguido de una descripción completa del proceso de entrenamiento de la ANN. Por último, se realiza la inversión de un perfil de Stokes (lo cual requiere un gran número de síntesis) haciendo uso de un algoritmo de optimización con el fin de recuperar las magnitudes de la atmósfera solar.
+* dissertation.pdf <br />
+Text file with a complete description of the project.
+
+* presentation.pptx <br />
+PowerPoint slides used in the presentation of the project.
+
